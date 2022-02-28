@@ -17,7 +17,7 @@ function const_item(item,weight,count,loot_count){
     var ret = {}
     ret.type="item"
     ret.name=item
-    ret.weight=weight
+    ret.weight=parseInt(weight)
     ret.functions=[]
     if(count.match(/\d+-\d+/)){
         var count_min=count.match(/\d+/g)[0]
