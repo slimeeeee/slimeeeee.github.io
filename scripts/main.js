@@ -6,7 +6,7 @@ function const_condition(condition){
 function generate(){
     var element = document.getElementById('input');
     var text = element.value
-    var list = text.split(\n)
+    var list = text.split('\n')
     var json={}
     json.pools=[]
     json.pools.push({})
