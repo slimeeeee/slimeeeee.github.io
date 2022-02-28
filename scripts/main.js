@@ -15,4 +15,5 @@ function generate(){
     json.pools[0].rolls=1
     json.pools[0].entries=[]
     document.getElementById('output').value=list
+    alert(list)
 }
