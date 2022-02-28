@@ -6,19 +6,19 @@
   </head>
   <body>
     <script src="scripts/main.js"></script>
-    <h3>Loot Tables Generator By slimeee v5</h3>
+    <h3>Loot Tables Generator By slimeee</h3>
     <hr/>
     <div>
         <p>Example: minecraft:diamond,1,5-6,6-7</p>
         <p>Example: [item],[weight],[normal min-max],[add count per loot lv max-min]</p>
-        <textarea id="input" rows=10 placeholder ="請輸入"></textarea>
+        <textarea id="input" rows=10 cols=100 placeholder ="請輸入"></textarea>
         <br/>
         <button onclick="generate()">生成JSON</button>
     </div>
     <hr/>
     <div>
         <p>Output</p>
-        <textarea id="output" rows=30 cols=30 readonly=true placeholder ="輸出"></textarea>
+        <textarea id="output" rows=30 cols=100 readonly=true placeholder ="輸出" style="font-size: 12pt"></textarea>
     </div>
   </body>
 </html>
