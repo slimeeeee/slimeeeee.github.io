@@ -3,6 +3,11 @@ function const_condition(condition){
         condition: condition
     }
 }
+function copy(){
+        var str = document.getElementById('output');
+        window.getSelection().selectAllChildren(str);
+        document.execCommand("Copy")
+}
 function const_function(fun){
     var obj={}
     obj["function"]=fun
@@ -56,5 +61,5 @@ function generate(){
         json.pools[0].entries.push(item_obj)
     }
     var output=JSON.stringify(json, null, 4)
-    document.getElementById('output').value=output;
+    document.getElementById('output').value=output
 }
