@@ -5,8 +5,8 @@ function const_condition(condition){
 }
 function copy(){
         var str = document.getElementById('output');
-        window.getSelection().selectAllChildren(str);
-        document.execCommand("Copy")
+        str.select()
+        document.execCommand("copy")
 }
 function const_function(fun){
     var obj={}
@@ -24,8 +24,8 @@ function const_item(item,weight,count,loot_count){
         var count_max=count.match(/\d+/g)[1]
         var set_count=const_function('set_count')
         set_count.count={}
-        set_count.count.min=count_min
-        set_count.count.max=count_max
+        set_count.count.min=parseInt(count_min)
+        set_count.count.max=parseInt(count_max)
         ret.functions.push(set_count)
     }else{
         alert('please use (min)-(max)')
@@ -35,8 +35,8 @@ function const_item(item,weight,count,loot_count){
         var loot_max=loot_count.match(/\d+/g)[1]
         var looting_enchant_count=const_function('looting_enchant')
         looting_enchant_count.count={}
-        looting_enchant_count.count.min=loot_min
-        looting_enchant_count.count.max=loot_max
+        looting_enchant_count.count.min=parseInt(loot_min)
+        looting_enchant_count.count.max=parseInt(loot_max)
         ret.functions.push(looting_enchant_count)
     }else{
         alert('please use (min)-(max)')
