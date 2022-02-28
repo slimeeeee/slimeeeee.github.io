@@ -56,5 +56,5 @@ function generate(){
         json.pools[0].entries.push(item_obj)
     }
     var output=JSON.stringify(json, null, 4)
-    document.getElementById('output').value=output
+    document.getElementById('output').value=output;
 }
